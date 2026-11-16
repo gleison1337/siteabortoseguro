@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde & Legalidade — Portal InfoSaúde Reprodutiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Aviso de Propósito Educativo -->
+  <div class="disclaimer-bar">
+    <span class="disclaimer-badge">Informativo</span>
+    <span>Conteúdo estritamente educativo e ilustrativo baseado na legislação brasileira e diretrizes do Sistema Único de Saúde (SUS).</span>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>🌿</span> InfoSaúde Reprodutiva
+      </a>
+      <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="protocolos.html">Medicamentos & Cuidados</a></li>
+          <li><a href="calculadora.html">Simulador de Referência</a></li>
+          <li><a href="saude-legalidade.html" class="active">Saúde & Legalidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="section-container" style="margin-bottom: 1rem;">
+        <span class="hero-tag">Direitos, Acolhimento e Recuperação</span>
+        <h1>Saúde Integral e Enquadramento Legal</h1>
+        <p style="color: var(--text-muted); max-width: 720px; margin: 0.8rem auto 0;">
+          Conheça os casos previstos em lei para o acesso seguro e gratuito pelo sistema público de saúde, além dos cuidados essenciais para a recuperação física e emocional.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 1: Enquadramento Legal no Brasil -->
+    <section class="section-container">
+      <div class="section-header">
+        <h2>Quando o procedimento é garantido por lei no Brasil?</h2>
+        <p>A legislação brasileira (Código Penal, Art. 128 e decisão do STF na ADPF 54) assegura o direito ao aborto legal e gratuito pelo SUS em três situações específicas:</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">🏥</div>
+          <h3>1. Risco de Vida à Gestante</h3>
+          <p>Quando a continuidade da gestação representa risco grave à saúde ou à vida da mulher, avaliado por equipe médica.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>2. Gravidez Resultante de Estupro</h3>
+          <p>Garantido independentemente da idade da vítima. <strong>Não é exigido boletim de ocorrência</strong> ou autorização judicial para o atendimento no SUS; a palavra da paciente basta para o acolhimento médico.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🧬</div>
+          <h3>3. Anencefalia Fetal</h3>
+          <p>Diagnóstico comprovado de má-formação grave do tubo neural incompatível com a vida extrauterina, conforme decisão do Supremo Tribunal Federal.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção 2: Recuperação e Saúde Emocional -->
+    <section class="section-container">
+      <div class="recovery-banner">
+        <div class="recovery-text">
+          <span class="hero-tag">Pós-Cuidados</span>
+          <h2>Recuperação Física e Bem-Estar Emocional</h2>
+          <p>
+            Após qualquer procedimento obstétrico ou perda gestacional, o acompanhamento médico e o suporte emocional são fundamentais para a recuperação plena.
+          </p>
+          <ul class="info-list">
+            <li><strong>Retorno da fertilidade:</strong> A ovulação pode ocorrer logo nas primeiras 2 semanas após o término da gestação. Métodos contraceptivos podem ser iniciados conforme orientação médica.</li>
+            <li><strong>Acompanhamento clínico:</strong> Uma consulta de revisão após 7 a 14 dias ajuda a confirmar a completa recuperação uterina.</li>
+            <li><strong>Acolhimento psicológico:</strong> Sentimentos variados são naturais. Buscar apoio em redes de confiança, psicólogos ou serviços de saúde mental contribui para um processo saudável.</li>
+          </ul>
+        </div>
+        <div class="recovery-channels">
+          <h3>Canais Oficiais de Apoio</h3>
+          <div class="channel-item">
+            <strong>Disque Saúde — 136</strong>
+            <span>Informações sobre unidades do SUS e serviços de referência em saúde da mulher.</span>
+          </div>
+          <div class="channel-item">
+            <strong>Central de Atendimento à Mulher — 180</strong>
+            <span>Orientação gratuita, sigilosa e 24h sobre direitos e rede de acolhimento.</span>
+          </div>
+          <div class="channel-item">
+            <strong>CVV (Apoio Emocional) — 188</strong>
+            <span>Atendimento voluntário e sigiloso 24 horas para suporte emocional.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Aviso Legal:</strong> Este projeto tem caráter exclusivamente informativo, educacional e ilustrativo. Não substitui consulta, diagnóstico ou prescrição médica. Procure sempre orientação profissional e serviços oficiais de saúde.</p>
+    <div class="footer-links">
+      <button type="button" data-open-terms>Termos de Serviço & Aviso Legal</button>
+      <button type="button" data-open-cookies>Preferências de Cookies</button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

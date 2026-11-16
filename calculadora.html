@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador Educativo — Portal InfoSaúde Reprodutiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Aviso de Propósito Educativo -->
+  <div class="disclaimer-bar">
+    <span class="disclaimer-badge">Simulador Educativo</span>
+    <span>Ferramenta estritamente ilustrativa baseada em diretrizes públicas da OMS para fins de estudo. Não constitui prescrição médica.</span>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>🌿</span> InfoSaúde Reprodutiva
+      </a>
+      <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="protocolos.html">Medicamentos & Cuidados</a></li>
+          <li><a href="calculadora.html" class="active">Simulador de Referência</a></li>
+          <li><a href="saude-legalidade.html">Saúde & Legalidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="section-container" style="margin-bottom: 1rem;">
+        <span class="hero-tag">Referência Clínica OMS</span>
+        <h1>Simulador Educativo de Protocolos</h1>
+        <p style="color: var(--text-muted); max-width: 720px; margin: 0.8rem auto 0;">
+          Selecione a idade gestacional em semanas e o tipo de protocolo descrito na literatura médica para visualizar como são estruturadas as doses de referência.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-container">
+      <div class="calculator-container">
+        <!-- Painel de Controles -->
+        <div class="calc-controls">
+          <div class="control-group">
+            <label for="weeks-range">
+              Idade Gestacional Estimada: <strong id="weeks-display" class="highlight-value">8 semanas</strong>
+            </label>
+            <input type="range" id="weeks-range" min="4" max="12" value="8" class="range-slider">
+            <div class="range-labels">
+              <span>4 sem</span>
+              <span>8 sem</span>
+              <span>12 sem</span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label>Protocolo de Referência (Literatura OMS):</label>
+            <div class="protocol-selector">
+              <button type="button" class="proto-btn active" data-protocol="combinado">
+                <strong>Protocolo Combinado</strong>
+                <span>Mifepristona + Misoprostol</span>
+              </button>
+              <button type="button" class="proto-btn" data-protocol="isolado">
+                <strong>Protocolo Isolado</strong>
+                <span>Apenas Misoprostol</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="alert-box info" style="margin-top: 1.5rem; margin-bottom: 0;">
+            <strong>Nota Importante:</strong> Este simulador apresenta exclusivamente esquemas de referência até 12 semanas conforme manuais técnicos da Organização Mundial da Saúde. Acima de 12 semanas, os protocolos hospitalares exigem supervisão médica presencial rigorosa.
+          </div>
+        </div>
+
+        <!-- Painel de Resultados Dinâmicos -->
+        <div class="calc-result" id="calc-result-box">
+          <div class="result-header">
+            <span class="result-badge" id="result-tag">Até 12 Semanas • Combinado</span>
+            <h3 id="result-title">Esquema Combinado de Referência</h3>
+          </div>
+
+          <div class="timeline-steps" id="result-steps">
+            <!-- Preenchido dinamicamente via JavaScript -->
+          </div>
+
+          <div class="pill-summary" id="pill-summary">
+            <!-- Resumo visual de comprimidos -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Aviso Legal:</strong> Este projeto tem caráter exclusivamente informativo, educacional e ilustrativo. Não substitui consulta, diagnóstico ou prescrição médica. Procure sempre orientação profissional e serviços oficiais de saúde.</p>
+    <div class="footer-links">
+      <button type="button" data-open-terms>Termos de Serviço & Aviso Legal</button>
+      <button type="button" data-open-cookies>Preferências de Cookies</button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

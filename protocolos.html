@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicamentos & Cuidados — Portal InfoSaúde Reprodutiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Aviso de Propósito Educativo -->
+  <div class="disclaimer-bar">
+    <span class="disclaimer-badge">Informativo</span>
+    <span>Conteúdo estritamente educativo e ilustrativo baseado em diretrizes clínicas da OMS e protocolos de saúde.</span>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>🌿</span> InfoSaúde Reprodutiva
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="protocolos.html" class="active">Medicamentos & Cuidados</a></li>
+          <li><a href="calculadora.html">Simulador de Referência</a></li>
+          <li><a href="saude-legalidade.html">Saúde & Legalidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cabeçalho da Página -->
+    <section class="page-header">
+      <div class="section-container" style="margin-bottom: 1rem;">
+        <span class="hero-tag">Farmacologia & Manejo Clínico</span>
+        <h1>Protocolos, Medicamentos e Suporte</h1>
+        <p style="color: var(--text-muted); max-width: 720px; margin: 0.8rem auto 0;">
+          Entenda como atuam os medicamentos recomendados pelas diretrizes internacionais de saúde, como gerenciar o desconforto físico com segurança e quais sinais exigem avaliação médica imediata.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção 1: Abas Interativas dos Medicamentos -->
+    <section class="section-container">
+      <div class="tabs-wrapper">
+        <div class="tabs-header" role="tablist">
+          <button class="tab-btn active" data-tab="mifepristona">1. Mifepristona</button>
+          <button class="tab-btn" data-tab="misoprostol">2. Misoprostol</button>
+          <button class="tab-btn" data-tab="diclofenaco">3. Diclofenaco & Proteção Gástrica</button>
+        </div>
+
+        <!-- Aba 1: Mifepristona -->
+        <div class="tab-content active" id="tab-mifepristona">
+          <div class="med-grid">
+            <div>
+              <h3>Mifepristona (Bloqueador de Progesterona)</h3>
+              <p>
+                A mifepristona é um antagonista dos receptores de progesterona. Na literatura médica, é utilizada na primeira etapa do protocolo combinado para preparar o organismo.
+              </p>
+              <ul class="info-list">
+                <li><strong>Mecanismo de ação:</strong> Bloqueia a progesterona, hormônio necessário para a manutenção da gestação, promovendo o amolecimento e dilatação inicial do colo uterino.</li>
+                <li><strong>Sensibilização:</strong> Aumenta a sensibilidade do útero às prostaglandinas (como o misoprostol), tornando a etapa seguinte mais eficaz.</li>
+                <li><strong>Efeitos comuns:</strong> Na maioria dos casos, não provoca sintomas intensos nas primeiras 24h a 48h, podendo ocorrer sangramento leve ou náusea discreta.</li>
+              </ul>
+            </div>
+            <div class="med-illustration">
+              <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+                <circle cx="80" cy="80" r="70" fill="#e6f2f0"/>
+                <rect x="45" y="65" width="70" height="30" rx="15" fill="#1b6b63"/>
+                <line x1="80" y1="65" x2="80" y2="95" stroke="#ffffff" stroke-width="2"/>
+                <text x="80" y="125" text-anchor="middle" fill="#124943" font-size="12" font-weight="600">Etapa 1: Preparo</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aba 2: Misoprostol -->
+        <div class="tab-content" id="tab-misoprostol">
+          <div class="med-grid">
+            <div>
+              <h3>Misoprostol (Análogo de Prostaglandina E1)</h3>
+              <p>
+                O misoprostol é utilizado tanto em sequência à mifepristona (protocolo combinado) quanto de forma isolada quando a mifepristona não está disponível.
+              </p>
+              <ul class="info-list">
+                <li><strong>Mecanismo de ação:</strong> Estimula contrações da musculatura lisa uterina e promove o amadurecimento cervical para o esvaziamento uterino.</li>
+                <li><strong>Vias de administração estudadas:</strong> Os protocolos clínicos descrevem administração sublingual (debaixo da língua por 30 minutos), bucal (entre a bochecha e a gengiva) ou vaginal.</li>
+                <li><strong>Efeitos esperados:</strong> Cólicas uterinas de intensidade moderada a forte e sangramento com coágulos, que costumam iniciar entre 1 e 4 horas após a administração.</li>
+              </ul>
+            </div>
+            <div class="med-illustration">
+              <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+                <circle cx="80" cy="80" r="70" fill="#e6f2f0"/>
+                <polygon points="80,40 115,60 115,100 80,120 45,100 45,60" fill="#1b6b63" fill-opacity="0.85"/>
+                <text x="80" y="84" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">200 mcg</text>
+                <text x="80" y="138" text-anchor="middle" fill="#124943" font-size="12" font-weight="600">Etapa 2: Ação Uterina</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aba 3: Diclofenaco e Cuidados Gástricos -->
+        <div class="tab-content" id="tab-diclofenaco">
+          <div class="med-grid">
+            <div>
+              <h3>Diclofenaco, Controle da Dor e Cuidados Gástricos</h3>
+              <p>
+                O manejo adequado da dor é parte essencial dos protocolos de saúde. Anti-inflamatórios não esteroidais (AINEs), como o <strong>ibuprofeno</strong> e o <strong>diclofenaco</strong>, são amplamente estudados para aliviar cólicas uterinas sem interferir na eficácia do misoprostol.
+              </p>
+              <div class="alert-box info">
+                <strong>Atenção à Saúde Gástrica:</strong> O diclofenaco é um anti-inflamatório potente para cólicas, mas <em>não é um protetor estomacal</em> — pelo contrário, AINEs podem causar irritação gástrica, azia ou dor no estômago.
+              </div>
+              <ul class="info-list">
+                <li><strong>Como proteger o estômago:</strong> Recomenda-se ingerir anti-inflamatórios sempre após uma refeição leve e, quando indicado por profissional de saúde, associar um protetor gástrico (como <em>omeprazol</em> ou <em>pantoprazol</em>).</li>
+                <li><strong>Efeitos gastrointestinais do Misoprostol:</strong> O próprio misoprostol pode causar náuseas, vômitos ou diarreia transitória. Antieméticos (como ondansetrona ou dimenidrinato) são frequentemente citados em protocolos de suporte.</li>
+                <li><strong>Contraindicações:</strong> Pessoas com histórico de úlcera gástrica, gastrite severa, alergia a AINEs ou problemas renais devem evitar diclofenaco e consultar um médico.</li>
+              </ul>
+            </div>
+            <div class="med-illustration">
+              <svg width="160" height="160" viewBox="0 0 160 160" fill="none">
+                <circle cx="80" cy="80" r="70" fill="#fdf2ee"/>
+                <path d="M80 45C62 45 50 58 50 75C50 98 80 120 80 120C80 120 110 98 110 75C110 58 98 45 80 45Z" fill="#d97757" fill-opacity="0.25" stroke="#d97757" stroke-width="3"/>
+                <text x="80" y="82" text-anchor="middle" fill="#b45334" font-size="12" font-weight="700">Alívio & Cuidado</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 2: Efeitos Esperados vs. Sinais de Alerta -->
+    <section class="section-container" id="cuidados">
+      <div class="section-header">
+        <h2>Sintomas Esperados vs. Sinais de Alerta</h2>
+        <p>Diferenciar as reações normais do processo de complicações que exigem atendimento médico urgente é fundamental para a segurança.</p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Coluna Verde: Esperado -->
+        <div class="status-card expected">
+          <div class="status-header">
+            <span class="status-dot green"></span>
+            <h3>Efeitos Esperados (Normais)</h3>
+          </div>
+          <ul>
+            <li><strong>Cólicas uterinas:</strong> Semelhantes a uma menstruação forte, diminuindo gradualmente após a expulsão.</li>
+            <li><strong>Sangramento vaginal:</strong> Mais intenso que a menstruação habitual nas primeiras horas, com presença de coágulos, reduzindo nos dias seguintes.</li>
+            <li><strong>Calafrios e febre baixa transitória:</strong> Temperatura abaixo de 38°C nas primeiras horas após o uso do misoprostol.</li>
+            <li><strong>Sintomas gastrointestinais leves:</strong> Náusea passageira ou episódios isolados de diarreia.</li>
+          </ul>
+        </div>
+
+        <!-- Coluna Coral/Vermelha: Alerta -->
+        <div class="status-card warning">
+          <div class="status-header">
+            <span class="status-dot red"></span>
+            <h3>Sinais de Alerta (Procure Atendimento Médico)</h3>
+          </div>
+          <ul>
+            <li><strong>Sangramento excessivo:</strong> Encharcar 2 ou mais absorventes noturnos grandes por hora, durante 2 horas consecutivas.</li>
+            <li><strong>Febre persistente:</strong> Temperatura igual ou superior a 38°C que dura mais de 24 horas após o uso da medicação.</li>
+            <li><strong>Dor abdominal intensa:</strong> Dor severa que não melhora mesmo após o uso de analgésicos e repouso.</li>
+            <li><strong>Secreção com odor fétido:</strong> Corrimento vaginal com cheiro forte ou mal-estar geral progressivo (tontura, desmaio, palidez).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 3: Perguntas Frequentes (Acordeão Interativo) -->
+    <section class="section-container">
+      <div class="section-header">
+        <h2>Dúvidas Frequentes sobre Cuidados</h2>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Posso tomar analgésicos antes de sentir dor?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Protocolos clínicos da OMS apontam que o uso profilático de analgésicos anti-inflamatórios (como ibuprofeno ou diclofenaco, sempre após alimentação) cerca de 30 a 60 minutos antes do misoprostol ajuda a reduzir significativamente o pico de dor das cólicas.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Por que a aspirina (AAS) deve ser evitada?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>O ácido acetilsalicílico (aspirina) afeta a agregação plaquetária e a coagulação sanguínea, podendo aumentar o volume do sangramento. Por isso, diretrizes médicas recomendam outros analgésicos, como ibuprofeno, diclofenaco ou paracetamol.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Quais cuidados de higiene e repouso são recomendados?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Durante o sangramento, recomenda-se usar apenas absorventes externos (evitando absorventes internos ou coletores menstruais nos primeiros dias para prevenir infecções), manter boa hidratação, alimentação leve e evitar esforços físicos intensos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Aviso Legal:</strong> Este projeto tem caráter exclusivamente informativo, educacional e ilustrativo. Não substitui consulta, diagnóstico ou prescrição médica. Procure sempre orientação profissional e serviços oficiais de saúde.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
