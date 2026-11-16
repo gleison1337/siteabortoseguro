@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="modal-body">
             <p>
-              Bem-vindo(a) ao portal <strong>InfoSaúde Reprodutiva</strong>. Antes de continuar, leia atentamente as condições de uso deste ambiente educacional:
+              Bem-vindo(a) ao portal <strong>Enf.ª Letícia FarmaComp</strong>. Antes de continuar, leia atentamente as condições de uso deste ambiente educacional:
             </p>
             <div class="terms-scroll-box">
               <h4>1. Caráter Estritamente Educativo e Ilustrativo</h4>
